@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  border: 3px solid black;
+  max-width: 770px;
+  height: 770px;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+}
+
+.grid-item {
+  border: 1px solid black;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item:first-child{
+    background-color: black;
+}
+
+.grid-item:nth-child(13){
+background-color: blueviolet;
+grid-column-start: 2 span;
+}
