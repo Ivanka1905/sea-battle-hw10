@@ -12,14 +12,14 @@
   display: grid;
 }
 .grid-1 {
-    width: 700px;
-        height: 700px;
+  width: 700px;
+  height: 700px;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(11, 1fr);
 }
 .grid-2 {
-    width: 630px;
-        height: 630px;
+  width: 630px;
+  height: 630px;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
 }
@@ -34,7 +34,7 @@
   align-items: center;
 }
 
-.grid-1>.grid-item:first-child {
+.grid-1 > .grid-item:first-child {
   background-color: black;
 }
 
@@ -79,7 +79,17 @@
 .model-7,
 .model-8,
 .model-9,
-.model-10, .model-1-2, .model-2-2, .model-3-2, .model-4-2, .model-5-2, .model-6-2, .model-7-2, .model-8-2, .model-9-2, .model-10-2 {
+.model-10,
+.model-1-2,
+.model-2-2,
+.model-3-2,
+.model-4-2,
+.model-5-2,
+.model-6-2,
+.model-7-2,
+.model-8-2,
+.model-9-2,
+.model-10-2 {
   content: "";
   width: 99%;
   height: 99%;
@@ -130,50 +140,50 @@
   background-color: red;
 }
 .model-1-2 {
-    grid-area: 1 / 1 / 2 /3;
-    background-color: blueviolet;
+  grid-area: 1 / 1 / 2 /3;
+  background-color: blueviolet;
 }
 .model-2-2 {
-    grid-area: 1 / 4 / 4 / 5;
-    background-color: chartreuse;
+  grid-area: 1 / 4 / 4 / 5;
+  background-color: chartreuse;
 }
 
 .model-3-2 {
-    grid-area: 1 / 7 / 2 / 11;
-    background-color: blue;
+  grid-area: 1 / 7 / 2 / 11;
+  background-color: blue;
 }
 
 .model-4-2 {
-    grid-area: 3 / 1 / 7 / 2;
-    background-color: blue;
+  grid-area: 3 / 1 / 7 / 2;
+  background-color: blue;
 }
 
 .model-5-2 {
-    grid-area: 3 / 6 / 4 / 9;
-    background-color: chartreuse;
+  grid-area: 3 / 6 / 4 / 9;
+  background-color: chartreuse;
 }
 
 .model-6-2 {
-    grid-area: 3 / 10 / 5 / 11;
-    background-color: blueviolet;
+  grid-area: 3 / 10 / 5 / 11;
+  background-color: blueviolet;
 }
 
 .model-7-2 {
-    grid-area: 8 / 1 / 9 / 3;
-    background-color: blueviolet;
+  grid-area: 8 / 1 / 9 / 3;
+  background-color: blueviolet;
 }
 
 .model-8-2 {
-    grid-area: 6 / 6 / 8 / 7;
-    background-color: blueviolet;
+  grid-area: 6 / 6 / 8 / 7;
+  background-color: blueviolet;
 }
 
 .model-9-2 {
-    grid-area: 6 / 10 / 9 / 11;
-    background-color: chartreuse;
+  grid-area: 6 / 10 / 9 / 11;
+  background-color: chartreuse;
 }
 
 .model-10-2 {
-    grid-area: 10 / 5 / 11 / 11;
-    background-color: red;
+  grid-area: 10 / 5 / 11 / 11;
+  background-color: red;
 }
