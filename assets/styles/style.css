@@ -1,29 +1,129 @@
 * {
   box-sizing: border-box;
 }
-
-.grid {
+.game{
+    width: 100%;
+    display: flex;
+    gap: 100px;
+}
+.grid-1, .grid-2 {
   border: 3px solid black;
-  max-width: 770px;
-  height: 770px;
+  width: 700px;
+  height: 700px;
   display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(11, 1fr);
+  
+}
+.grid-1{
+grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+}
+.grid-2{
+    grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
 }
 
 .grid-item {
   border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
+font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.grid-item:first-child{
-    background-color: black;
+.grid-item:first-child {
+  background-color: black;
 }
 
-.grid-item:nth-child(13){
-background-color: blueviolet;
-grid-column-start: 2 span;
+.item-1 {
+  grid-row-start: 2;
+}
+
+.item-2 {
+  grid-row-start: 3;
+}
+
+.item-3 {
+  grid-row-start: 4;
+}
+.item-4 {
+  grid-row-start: 5;
+}
+.item-5 {
+  grid-row-start: 6;
+}
+.item-6 {
+  grid-row-start: 7;
+}
+.item-7 {
+  grid-row-start: 8;
+}
+.item-8 {
+  grid-row-start: 9;
+}
+.item-9 {
+  grid-row-start: 10;
+}
+.item-10 {
+  grid-row-start: 11;
+}
+.model-1,
+.model-2,
+.model-3,
+.model-4,
+.model-5,
+.model-6,
+.model-7,
+.model-8,
+.model-9,
+.model-10 {
+  content: "";
+  width: 99%;
+  height: 99%;
+  justify-self: center;
+  align-self: center;
+}
+.model-1 {
+  grid-area: 2 / 2 / 3 / 4;
+  background-color: blueviolet;
+}
+.model-2 {
+  grid-area: 2 / 5 / 5 / 6;
+  background-color: chartreuse;
+}
+
+.model-3 {
+  grid-area: 2 / 8 / 3 / 12;
+  background-color: blue;
+}
+
+.model-4 {
+  grid-area: 4 / 2 / 8 / 3;
+  background-color: blue;
+}
+
+.model-5 {
+  grid-area: 4 / 7 / 5 / 10;
+  background-color: chartreuse;
+}
+.model-6 {
+  grid-area: 4 / 11 / 6 / 12;
+  background-color: blueviolet;
+}
+.model-7 {
+  grid-area: 9 / 2 / 10 / 4;
+  background-color: blueviolet;
+}
+.model-8 {
+  grid-area: 7 / 7 / 9 / 8;
+  background-color: blueviolet;
+}
+.model-9 {
+  grid-area: 7 / 11 / 10 / 12;
+  background-color: chartreuse;
+}
+.model-10 {
+  grid-area: 11 / 6 / 12 / 12;
+  background-color: red;
 }
